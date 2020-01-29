@@ -5,11 +5,16 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "serve": "env $(cat .env | xargs) budo src/index.js:bundle.js --pushstate --dir=public --live -- -t babelify -g aliasify -t envify -dv",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nick Thomas <nichoth@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^7.1.10"
+    "@babel/core": "^7.8.3",
+    "aliasify": "^2.1.0",
+    "babelify": "^10.0.0",
+    "electron": "^7.1.10",
+    "envify": "^4.1.0"
   }
 }
