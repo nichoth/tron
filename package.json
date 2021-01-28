@@ -14,7 +14,7 @@
     "@babel/core": "^7.8.3",
     "aliasify": "^2.1.0",
     "babelify": "^10.0.0",
-    "electron": "^7.1.10",
+    "electron": "^9.4.0",
     "envify": "^4.1.0"
   }
 }
